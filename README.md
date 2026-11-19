@@ -1,19 +1,33 @@
-# SpendWise - JavaScript Foundation
+# SpendWise — Personal Finance & Expense Tracker
 
-SpendWise is a lightweight personal finance web application designed to help users calculate and monitor their monthly budget and spending.
+## Project Description
+SpendWise is a responsive web application built to help users record daily expenses, categorize spending, monitor budgets, and visualize personal financial habits in real time. Deploying from a local workspace to Netlify makes the application accessible on the web with automatic continuous deployment from GitHub.
 
-## Application Purpose
-SpendWise collects income and expense inputs from users, performs automated budget calculations, and logs a clear summary statement in the browser developer console.
+## Technologies Used
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+- **Version Control & CLI:** Git, Git Bash, GitHub
+- **Deployment & CI/CD:** Netlify
 
-## JavaScript Concepts Implemented
-- **Variables & Data Types**: Stored numerical financial inputs, strings for descriptions, and object collections using `let` and `const`.
-- **User Input Collection**: Used `window.prompt()` to gather real-time data from the user and `parseFloat()` to convert text inputs into numeric types.
-- **Calculations & Logic**: Calculated total expenses and net remaining balance using basic arithmetic operators and `isNaN()` validation.
-- **Reusable Functions**: Structured code into modular functions (`collectUserInput`, `calculateTotalExpenses`, `calculateRemainingBalance`, `displayBudgetSummary`) to promote clean and maintainable logic.
-- **Console Output**: Leveraged `console.log()` with template literals to display formatted summary data.
+## GitHub Repository Information
+- **Repository Name:** `spendwise`
+- **Repository URL:** `https://github.com/lpamin123-cyber/spendwise`
+- **Branch:** `main`
+- **Visibility:** Public
 
-## How to Run
-1. Clone or download this repository.
-2. Open `index.html` in any web browser.
-3. Respond to the prompt boxes with your financial figures.
-4. Open the Developer Tools console (`F12` or `Ctrl+Shift+I` / `Cmd+Option+I`) to view the budget breakdown.
+## Live Netlify Website URL
+- **Live URL:** `https://YOUR-REAL-NETLIFY-SUBDOMAIN.netlify.app`
+
+## Deployment Process Summary
+1. **Deployment Readiness:** Verified project files inside `~/spendwise` and prepared `.gitignore`.
+2. **GitHub Repository:** Pushed the project to a public GitHub repository (`https://github.com/lpamin123-cyber/spendwise`) on the `main` branch.
+3. **Netlify Deployment:** Connected the GitHub repository to Netlify, deployed the site, and updated the subdomain to a custom SpendWise site name.
+4. **Continuous Deployment & Testing:** Made a visible update, pushed to `main`, verified automatic Netlify builds, and tested pages, styles, scripts, and assets on the live URL.
+
+## Challenges Encountered During Deployment
+- **Heredoc & Directory Prompts in Git Bash:** Resolved unclosed `cat << 'EOF'` prompts with `Ctrl + C` and ensured commands ran inside `~/spendwise` with `EOF` on its own line.
+- **Remote URL & Asset Verification:** Updated `origin` to `https://github.com/lpamin123-cyber/spendwise.git` and checked browser DevTools (`Console` and `Network`) on the live site for `404` or script errors.
+
+## Lessons Learned
+- Always verify `pwd` and `git remote -v` before committing or pushing changes.
+- Linking GitHub to Netlify automates builds and updates on every push to `main`.
+- Testing the live Netlify site in the browser catches path or asset issues early.
