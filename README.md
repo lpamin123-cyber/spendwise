@@ -15,7 +15,7 @@ SpendWise is a responsive web application built to help users record daily expen
 - **Visibility:** Public
 
 ## Live Netlify Website URL
-- **Live URL:** `https://YOUR-REAL-NETLIFY-SUBDOMAIN.netlify.app`
+- **Live URL:** `https://actual-netlify-subdomain.netlify.app`
 
 ## Deployment Process Summary
 1. **Deployment Readiness:** Verified project files inside `~/spendwise` and prepared `.gitignore`.
