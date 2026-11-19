@@ -54,3 +54,4 @@ function displayBudgetSummary() {
 
 // Execute program on script load
 displayBudgetSummary();
+/* Verified live GitHub & Netlify deployment */
